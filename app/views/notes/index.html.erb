@@ -1,0 +1,10 @@
+<ul>
+
+<% @notes.each do |n| %>
+  <%= render 'note_row', :note => n %>
+<% end %>
+
+</ul>
+
+<%= render 'ajax_form', note: Note.new %>
+
